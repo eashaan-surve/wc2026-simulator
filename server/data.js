@@ -1,3 +1,4 @@
+// FIFA ranking points added as initial Elo seed ratings
 const GROUPS = {
   A: ['Mexico', 'South Africa', 'South Korea', 'Czechia'],
   B: ['Canada', 'Bosnia and Herzegovina', 'Qatar', 'Switzerland'],
