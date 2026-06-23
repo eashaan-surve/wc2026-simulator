@@ -12,7 +12,7 @@ function eloUpdate(ratingA, ratingB, scoreA, scoreB) {
   const delta = K * marginMult * (actualA - expectedA);
   return [ratingA + delta, ratingB - delta];
 }
-
+// Recomputes all ratings chronologically from finished matches
 function computeRatings(matches) {
   const ratings = { ...INITIAL_RATINGS };
   const finished = matches
@@ -95,6 +95,7 @@ function buildStandings(matches, ratings) {
   return standings;
 }
 
+// Builds the 32-team knockout bracket from group standings
 function buildR32(standings) {
   const W = (g) => ({ ...standings[g][0], group: g, pos: 'winner' });
   const R = (g) => ({ ...standings[g][1], group: g, pos: 'runnerup' });
