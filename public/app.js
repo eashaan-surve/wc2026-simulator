@@ -143,7 +143,7 @@ function rankLabel(i) {
   if (i === 2) return '<td class="rank-cell bronze">🥉</td>';
   return `<td class="rank-cell">${i + 1}</td>`;
 }
-
+// Renders simulation results: team table and per-round matchup cards
 function renderSimulation(data) {
   const container = document.getElementById('sim-results');
 
