@@ -144,7 +144,7 @@ function playMatch(teamA, teamB) {
   const pA = matchProb(teamA.rating, teamB.rating);
   return Math.random() < pA ? teamA : teamB;
 }
-
+// Monte Carlo simulation of the full knockout bracket
 function runSimulation(r32, numSims = 10000) {
   const teamSeedGroup = {};
   r32.forEach(pair => {
