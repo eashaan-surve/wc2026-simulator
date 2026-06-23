@@ -1,0 +1,15 @@
+{
+  "name": "wc2026-knockout-simulator",
+  "version": "1.0.0",
+  "description": "Live-updating 2026 World Cup knockout stage Monte Carlo simulator",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0",
+    "dotenv": "^16.4.5"
+  }
+}
