@@ -289,7 +289,7 @@ function renderScoredBracket(data) {
   html += '<p class="hint" style="margin-top:14px">Predicted scorelines from a Poisson goal model based on Elo ratings. Semifinal, Third Place, and Final venues are FIFA-confirmed; earlier rounds rotate through all 16 official host stadiums.</p>';
   container.innerHTML = html;
 }
-
+// Auto-refresh every 60 seconds
 async function refreshAll() {
   const [state, matchesData] = await Promise.all([fetchStandings(), fetchMatches()]);
   currentState = state;
