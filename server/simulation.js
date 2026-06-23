@@ -1,3 +1,4 @@
+// Builds live group standings from finished matches
 const { GROUPS, INITIAL_RATINGS } = require('./data');
 
 function eloUpdate(ratingA, ratingB, scoreA, scoreB) {
