@@ -74,7 +74,7 @@ function getRatingRange(standings) {
   const all = Object.values(standings).flat().map(t => t.rating);
   return { min: Math.min(...all), max: Math.max(...all) };
 }
-
+// Renders standings table and fixtures for a selected group
 function renderGroup(group, state, matchesData) {
   const container = document.getElementById('group-content');
   const standings = state.standings[group];
